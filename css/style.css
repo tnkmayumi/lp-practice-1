@@ -31,10 +31,10 @@ a{
   margin: 15px;
   padding: 15px;
   width: 60px;
+  transition: 0.3s;
 }
 
 .header-button:hover{
-  transition: 0.3s;
   color: #333;
 }
 
@@ -121,11 +121,11 @@ SKILLS
   margin-right: 100px;
   margin-bottom: 100px;  
   opacity: 0.7;
+  transition: 0.5s
 }
 
 .skills-item:hover{
   opacity: 1;
-  transition: 0.5s #fff;
 }
 
 .skills-item:nth-child(3n){
@@ -192,9 +192,9 @@ plan
   background-color: #e0efff;
 }
 
-/*icon：表示されない、アクションまだ
+/*
+icon
 */
-
 .sns{
   background-color: #e3f2fd;
 }
@@ -211,8 +211,12 @@ plan
   color: #8c8c8c;
   font-size: 40px;
   text-align: center;
+  transition: 0.5s
 }
 
+.icon:hover{
+  color: #fff;
+}
 
 
 /*footer*/
@@ -220,12 +224,12 @@ plan
   background-color: #cfd8dc;
   width: 100%;
   height: 63px;
+  display: flex;
+  justify-content: end;
 }
 
 .copyrigth{
-  padding: 25px 50px;
+  padding: 25px 0;
   font-size: 13px;
   letter-spacing: 0.5px;
-  display: inline-block;
-  float: right;
 }
