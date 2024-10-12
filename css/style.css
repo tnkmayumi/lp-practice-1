@@ -321,14 +321,16 @@ SP版
 
   .icon-area{
     padding: 50px 0;
-  }
-  .icon{
-    padding: 50px 0;
-    width: 100%;
-    margin-right: 15px;
+    flex-direction: column;
   }
 
-  .icon:first-child{
-    margin-left: 15px;
+  .icon{
+    padding-bottom: 50px;
+    width: 100%;
+    margin: 0 15px;
+  }
+
+  .icon:last-child{
+    padding-bottom: 0;
   }
 }
