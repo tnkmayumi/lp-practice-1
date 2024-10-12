@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 .inner{
-  width: 1100px;
-  max-width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -10,12 +9,14 @@
   background-color: #fff;
 }
 
-.header-nav{
+.header-menu{
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.header-logo{
+.fas{
   margin: 15px;
   color: #777;
   size: 40px;
@@ -23,6 +24,7 @@
 
 a{
   text-decoration: none;
+  display: block;
 }
 
 .header-button {
@@ -30,12 +32,26 @@ a{
   background-color: #6ba7eb;
   margin: 15px;
   padding: 15px;
-  width: 60px;
   transition: 0.3s;
 }
 
 .header-button:hover{
   color: #333;
+}
+
+.humbg{
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  justify-content: center;
+  margin: 15px;
+}
+
+.humbg div{
+  width: 25px;
+  height: 3px;
+  background-color: #777;
 }
 
 .section-title{
@@ -49,7 +65,6 @@ a{
 /*
 keyvisual
 */
-
 .keyvisual{
   background-image: url(../images/keyvisual/keyvisual.jpg);
   background-size: cover;
@@ -85,11 +100,7 @@ NEWS
 .news-illusut{
   flex: 4;
   text-align: center;
-}
-
-.news-illusut{
   width: 250px;
-  display: inline-block;
 }
 
 .news-text{
@@ -98,7 +109,6 @@ NEWS
   word-break: break-all;
   text-align: center;
   margin: 20px;
-  padding-left: 20px;
   flex: 6;
 }
 
@@ -152,8 +162,9 @@ plan
 .table-cell{
   border: 2px;
   table-layout: fixed;
+  line-height: 26px;
   font-size: 16px;
-  width: 100%;
+  margin: 0 auto;
 }
 
 .table-cell th:first-child{
@@ -222,14 +233,102 @@ icon
 /*footer*/
 .footer-area{
   background-color: #cfd8dc;
-  width: 100%;
   height: 63px;
-  display: flex;
-  justify-content: end;
+  text-align: right;
 }
 
 .copyrigth{
   padding: 25px 0;
   font-size: 13px;
   letter-spacing: 0.5px;
+}
+
+/*
+TAB版
+*/
+@media(max-width: 1199px){
+
+  .keyvisual{
+    padding: 250px 0;
+  }
+
+  .news{
+    padding: 50px 0;
+  }
+
+  .news-content{
+    display: block;
+  }
+
+  .news-illusut{
+    width: 100%;
+  }
+
+  .skills-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-item{
+    margin: 0;
+  }
+
+  .skills-item:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .skills-item:nth-child(7n),
+  .skills-item:nth-child(11n){
+    margin-bottom: 80px;
+  }
+}
+
+/*
+SP版
+*/
+@media(max-width: 767px){
+  
+  .header-button{
+    display: none;
+  }
+
+  .humbg{
+    display: flex;
+  }
+
+  .keyvisual{
+    padding: 200px 0;
+  }
+
+  .title-text{
+    font-size: 40px;
+  }
+
+  .subtitle-text{
+    font-size: 30px;
+  }
+
+  .table-cell{
+    line-height: 22px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .td{
+    font-size: 12px;
+  }
+
+  .icon-area{
+    padding: 50px 0;
+  }
+  .icon{
+    padding: 50px 0;
+    width: 100%;
+    margin-right: 15px;
+  }
+
+  .icon:first-child{
+    margin-left: 15px;
+  }
 }
